@@ -48,10 +48,10 @@ def merge_sort(arr):
         # split array into half
         arr1 = arr[len(arr)//2:]
         arr2 = arr[:len(arr)//2]
-        # continue splitting array until base case(with recursion):
+        # sort each half:
         sort1 = merge_sort(arr1)
         sort2 = merge_sort(arr2)
-        # use merge helper function to sort and merge each split:
+        # use merge helper function to merge back together:
         return merge(sort1, sort2)
 
 #
