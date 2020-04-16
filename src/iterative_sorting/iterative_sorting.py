@@ -26,7 +26,6 @@ def bubble_sort(arr):
         # iterate over rest of list but don't
         # need last index because know those are largest elements.
         for x in range(len(arr)-i-1):
-            print(arr)
         # compare each element to its neighbor:
         # if element on the left is higher, switch places:
             if arr[x] > arr[x + 1]:
@@ -34,7 +33,6 @@ def bubble_sort(arr):
 
     return arr
 
-# bubble_sort(arr)
 # STRETCH: implement the Count Sort function below
 def count_sort( arr, maximum=-1 ):
 
